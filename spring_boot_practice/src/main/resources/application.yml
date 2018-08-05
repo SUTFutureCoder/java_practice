@@ -1,0 +1,23 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /HelloWorld
+
+helloWorld: "spring boot 测试编码"
+
+mysql:
+  jdbcName: com.mysql.jdbc.Driver
+  dbUrl: jdbc:mysql://localhost:3306/project256
+  userName: root
+  password: 000000
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/project256
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
