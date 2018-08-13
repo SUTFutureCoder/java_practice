@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+    <bean id="helloWorld" class="com.spring_practice.test.HelloWorld"></bean>
+    <bean id="qa" class="com.spring_practice.service.Qa"></bean>
+    <bean id="qa2" class="com.spring_practice.service.Qa2"></bean>
+    <bean id="javawork" class="com.spring_practice.service.JavaWork">
+        <property name="tester" ref="qa2"></property>
+    </bean>
+
+
+    <bean id="people" class="com.spring_practice.entity.People"></bean>
+    <bean id="people2" class="com.spring_practice.entity.People">
+        <property name="id" value="1"></property>
+        <property name="name" value="qa"></property>
+        <property name="age" value="11"></property>
+    </bean>
+    <bean id="people3" class="com.spring_practice.entity.People">
+        <constructor-arg type="int" value="2"></constructor-arg>
+        <constructor-arg type="java.lang.String" value="QA2"></constructor-arg>
+        <constructor-arg type="int" value="24"></constructor-arg>
+    </bean>
+    <bean id="people4" class="com.spring_practice.entity.People">
+        <constructor-arg index="0" value="3"></constructor-arg>
+        <constructor-arg index="1" value="QA3"></constructor-arg>
+        <constructor-arg index="2" value="24"></constructor-arg>
+    </bean>
+    <bean id="people5" class="com.spring_practice.entity.People">
+        <constructor-arg index="0" type="int" value="4"></constructor-arg>
+        <constructor-arg index="1" type="java.lang.String" value="QA4"></constructor-arg>
+        <constructor-arg index="2" type="int" value="2"></constructor-arg>
+    </bean>
+    <bean id="peopleFactory" class="com.spring_practice.factory.PeopleFactory"></bean>
+    <bean id="people7" factory-bean="peopleFactory" factory-method="createPeople"></bean>
+
+    <bean id="people8" class="com.spring_practice.factory.PeopleFactory2" factory-method="createPeople"></bean>
+
+    <bean id="dog1" class="com.spring_practice.entity.Dog">
+        <property name="name" value="Jack"></property>
+    </bean>
+
+    <bean id="people9" class="com.spring_practice.entity.People">
+        <property name="id" value="1"></property>
+        <property name="name" value="qa"></property>
+        <property name="age" value="11"></property>
+        <!--<property name="dog" ref="dog1"></property>-->
+    </bean>
+
+    <bean id="people10" class="com.spring_practice.entity.People">
+        <property name="id"  value="1"></property>
+        <property name="name" value="qa"></property>
+        <property name="age" value="11"></property>
+        <property name="dog">
+            <bean class="com.spring_practice.entity.Dog">
+                <property name="name" value="tom"></property>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="people11" class="com.spring_practice.entity.People">
+        <property name="id"  value="1"></property>
+        <property name="name" value="qa"></property>
+        <property name="age" value="11"></property>
+        <property name="dog">
+            <null></null>
+        </property>
+    </bean>
+
+    <bean id="people12" class="com.spring_practice.entity.People">
+        <property name="id"  value="1"></property>
+        <property name="name" value="qa"></property>
+        <property name="age" value="11"></property>
+        <property name="dog.name" value="JackTom"></property>
+    </bean>
+
+    <bean id="people13" class="com.spring_practice.entity.People">
+        <property name="id"  value="1"></property>
+        <property name="name" value="qa"></property>
+        <property name="age" value="11"></property>
+        <property name="dog.name" value="JackTom"></property>
+        <property name="hobbies">
+            <list>
+                <value>唱歌</value>
+                <value>跳舞</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <bean id="people14" class="com.spring_practice.entity.People">
+        <property name="id"  value="1"></property>
+        <property name="name" value="qa"></property>
+        <property name="age" value="11"></property>
+        <property name="dog.name" value="JackTom"></property>
+        <property name="hobbies">
+            <list>
+                <value>唱歌</value>
+                <value>跳舞</value>
+            </list>
+        </property>
+        <property name="loves">
+            <set>
+                <value>ABC</value>
+                <value>1234</value>
+            </set>
+        </property>
+    </bean>
+
+    <bean id="people15" class="com.spring_practice.entity.People">
+        <property name="id"  value="1"></property>
+        <property name="name" value="qa"></property>
+        <property name="age" value="11"></property>
+        <property name="dog" ref="dog"></property>
+        <property name="hobbies">
+            <list>
+                <value>唱歌</value>
+                <value>跳舞</value>
+            </list>
+        </property>
+        <property name="loves">
+            <set>
+                <value>ABC</value>
+                <value>1234</value>
+            </set>
+        </property>
+        <property name="works">
+            <map>
+                <entry>
+                    <key><value>上午</value></key>
+                    <value>Coding</value>
+                </entry>
+                <entry>
+                    <key><value>下午</value></key>
+                    <value>Test</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <!--自动注入 很多同类的不同对象 能通过name来自动注入-->
+    <bean id="dog" class="com.spring_practice.entity.Dog">
+        <property name="name" value="Jack"></property>
+    </bean>
+    <bean id="people16" class="com.spring_practice.entity.People">
+        <property name="id"  value="1"></property>
+        <property name="name" value="qa"></property>
+        <property name="age" value="11"></property>
+        <!--<property name="dog" ref="dog"></property>-->
+        <replaced-method name="getDog" replacer="people17"></replaced-method>
+        <property name="hobbies">
+            <list>
+                <value>唱歌</value>
+                <value>跳舞</value>
+            </list>
+        </property>
+        <property name="loves">
+            <set>
+                <value>ABC</value>
+                <value>1234</value>
+            </set>
+        </property>
+        <property name="works">
+            <map>
+                <entry>
+                    <key><value>上午</value></key>
+                    <value>Coding</value>
+                </entry>
+                <entry>
+                    <key><value>下午</value></key>
+                    <value>Test</value>
+                </entry>
+            </map>
+        </property>
+        <property name="address">
+            <props>
+                <prop key="address1">aaaa</prop>
+                <prop key="address2">bbbb</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--非单例 prototype为多例-->
+    <bean id="dog2" class="com.spring_practice.entity.Dog" scope="prototype">
+        <property name="name" value="Jack"></property>
+    </bean>
+
+    <bean id="people17" class="com.spring_practice.entity.People2"></bean>
+
+
+
+    <!--抽象类-->
+    <bean id="abstractPeople" class="com.spring_practice.entity.People" abstract="true">
+        <property name="className" value="高三5班"></property>
+        <property name="age" value="19"></property>
+    </bean>
+
+    <!--依赖属性，先找到依赖的属性先去初始化他-->
+    <bean id="zhangsan" parent="abstractPeople" depends-on="authority">
+        <property name="id" value="1"></property>
+        <property name="name" value="zhangsan"></property>
+    </bean>
+
+    <bean id="lisi" parent="abstractPeople">
+        <property name="id" value="2"></property>
+        <property name="age" value="20"></property>
+        <property name="name" value="lisi"></property>
+        <property name="dog" ref="dog3"></property>
+    </bean>
+
+    <bean id="authority" class="com.spring_practice.service.Authority"></bean>
+
+    <bean id="dog3" class="com.spring_practice.entity.Dog">
+        <property name="name" value="jack"></property>
+    </bean>
+
+
+
+
+    <!--<bean id="studentService" class="com.spring_practice.service.impl.StudentServiceImpl"></bean>-->
+    <!--<bean id="studentServiceAspect" class="com.spring_practice.advice.StudentServiceAspect"></bean>-->
+    <!--<aop:config>-->
+        <!--<aop:aspect id="studentServiceAspect" ref="studentServiceAspect">-->
+            <!--&lt;!&ndash;定义切点 任意返回， 任意包，方法名任意，参数两个点任意多少参数&ndash;&gt;-->
+            <!--<aop:pointcut id="businessService" expression="execution(* com.spring_practice.service.*.*(..))"></aop:pointcut>-->
+            <!--&lt;!&ndash;定义通知 后定义切点&ndash;&gt;-->
+            <!--<aop:before method="doBefore" pointcut-ref="businessService"></aop:before>-->
+            <!--<aop:after method="doAfter" pointcut-ref="businessService"></aop:after>-->
+            <!--<aop:around method="doAround" pointcut-ref="businessService"></aop:around>-->
+            <!--<aop:after-returning method="doAfterReturning" pointcut-ref="businessService"></aop:after-returning>-->
+            <!--<aop:after-throwing method="doAfterThrowing" pointcut-ref="businessService" throwing="ex"></aop:after-throwing>-->
+        <!--</aop:aspect>-->
+    <!--</aop:config>-->
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!--jdbcdaosupport已帮助搞定-->
+    <!--<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+        <!--<property name="dataSource" ref="dataSource"></property>-->
+    <!--</bean>-->
+
+    <bean id="namedParameterJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+        <constructor-arg ref="dataSource"></constructor-arg>
+    </bean>
+
+    <context:property-placeholder location="jdbc.properties"/>
+
+    <!--<bean id="studentDao" class="com.spring_practice.dao.impl.StudentDaoImpl">-->
+        <!--<property name="jdbcTemplate" ref="jdbcTemplate"></property>-->
+    <!--</bean>-->
+
+    <bean id="studentDao" class="com.spring_practice.dao.impl.StudentDaoImpl">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <bean id="studentService" class="com.spring_practice.service.impl.StudentServiceImpl">
+        <property name="studentDao" ref="studentDao"></property>
+    </bean>
+
+
+    <!--jdbc事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+        <property name="transactionManager" ref="transactionManager"></property>
+    </bean>
+
+    <bean id="bankDao" class="com.spring_practice.dao.impl.BankDaoImpl">
+        <property name="namedParameterJdbcTemplate" ref="namedParameterJdbcTemplate"></property>
+    </bean>
+
+    <bean id="bankService" class="com.spring_practice.service.impl.BankServiceImpl">
+        <property name="transactionTemplate" ref="transactionTemplate"></property>
+        <property name="bankDao" ref="bankDao"></property>
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
+
+</beans>
+<!--作用范围
+1.singleton Spring ioc容器中仅有一个Bean实例，Bean以单例的方式存在
+2.prototype每次从容器中调用bean时，都返回一个新的实例
+以上重点
+
+3.request 每次http请求都会创建一个新的Bean
+4.session 每个会话创建一个Bean
+
+-->
