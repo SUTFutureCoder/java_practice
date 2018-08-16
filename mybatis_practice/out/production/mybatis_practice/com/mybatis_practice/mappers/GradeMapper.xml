@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis_practice.mappers.GradeMapper">
+
+	<!--<resultMap id="GradeResult" type="Grade">-->
+		<!--&lt;!&ndash;定义主键，下面实体和字段名字一致&ndash;&gt;-->
+		<!--<id property="id" column="id"/>-->
+		<!--<result property="gradeName" column="gradeName"/>-->
+		<!--&lt;!&ndash;一对多场景用collection&ndash;&gt;-->
+		<!--<collection property="students" column="id" select="com.mybatis_practice.mappers.StudentMapper.findByGradeId"/>-->
+	<!--</resultMap>-->
+
+	<!--<select id="findById" parameterType="Integer" resultMap="GradeResult">-->
+		<!--select * from t_grade where id=#{id}-->
+	<!--</select>-->
+
+</mapper> 
