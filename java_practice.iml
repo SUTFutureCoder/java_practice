@@ -4,9 +4,22 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/concurrency/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lintcode/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/concurrency/src/ch2" />
+      <excludeFolder url="file://$MODULE_DIR$/concurrency/src/ch3" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/jcip-annotations-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
   </component>
 </module>
-
