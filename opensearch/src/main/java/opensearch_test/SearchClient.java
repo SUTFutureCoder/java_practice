@@ -32,9 +32,9 @@ import java.util.List;
  */
 public class SearchClient {
 
-    private static String appName = "o";
-    private static String accessKey = "L";
-    private static String secret = "h";
+    private static String appName = "opensearch";
+    private static String accessKey = "LTAIk0l";
+    private static String secret = "h27wUX";
     private static String host = "http://opensearch-cn-qingdao.aliyuncs.com";
 
     public static void main(String[] args) {
