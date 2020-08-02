@@ -3,9 +3,7 @@ package ch2;
 import net.jcip.annotations.GuardedBy;
 import net.jcip.annotations.ThreadSafe;
 
-import javax.servlet.Servlet;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.*;
 import java.math.BigInteger;
 
 /**
@@ -29,6 +27,15 @@ public class CachedFactorizer implements Servlet {
         return (double) cacheHits / (double) hits;
     }
 
+    public void init(ServletConfig servletConfig) throws ServletException {
+
+
+    }
+
+    public ServletConfig getServletConfig() {
+        return null;
+    }
+
     public void service(ServletRequest req, ServletResponse resp) {
         BigInteger i = extractFromRequest(req);
         BigInteger[] factors = null;
@@ -47,5 +54,13 @@ public class CachedFactorizer implements Servlet {
             }
         }
         encodeIntoResponse(resp, factors);
+    }
+
+    public String getServletInfo() {
+        return null;
+    }
+
+    public void destroy() {
+
     }
 }

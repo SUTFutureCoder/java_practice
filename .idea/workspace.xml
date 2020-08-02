@@ -2,55 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88fc5aa1-e141-4328-a080-5c01ddd72a3e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/.idea/algorithm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/algorithm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_practice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring02quickstart_xml/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring02quickstart_xml/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring03wriing_auto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring03wriing_auto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springquickstart/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springquickstart/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrency/src/ch2/CachedFactorizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/concurrency/src/ch2/CachedFactorizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opensearch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/opensearch/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq_simple/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq_simple/.idea/workspace.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="java_practice.iml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java_practice.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/Code/ele/commodity" value="PREVIEW" />
-        <entry key="$USER_HOME$/Code/ele/tms-master-cdf690ac1891ac32d6449521a7a37b6d3c0e9cb0" value="PREVIEW" />
-      </map>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -61,92 +39,106 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="960" />
-    <option name="height" value="877" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="testopensearch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java_practice" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectId" id="1f7fjY8YWRXeKciU3HXWSybJthI" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.QuickSort.testQuickSort">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSort.testQuickSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java.sort" />
+      <option name="MAIN_CLASS_NAME" value="main.java.sort.QuickSort" />
+      <option name="METHOD_NAME" value="testQuickSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSmoothBursty.testBursty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="guava.TestSmoothBursty" />
+      <option name="METHOD_NAME" value="testBursty" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSmoothBursty.testSmoothBursty2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="guava.TestSmoothBursty" />
+      <option name="METHOD_NAME" value="testSmoothBursty2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.QuickSort.testQuickSort" />
+        <item itemvalue="JUnit.TestSmoothBursty.testSmoothBursty2" />
+        <item itemvalue="JUnit.TestSmoothBursty.testBursty" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -159,78 +151,49 @@
       <option name="presentableId" value="Default" />
       <updated>1564134820871</updated>
       <workItem from="1564134825050" duration="24000" />
+      <workItem from="1572250667002" duration="320000" />
+      <workItem from="1572251008571" duration="156000" />
+      <workItem from="1595574188549" duration="890000" />
+      <workItem from="1595932176348" duration="5388000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info anchor="right" id="Remote Host" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16380544" />
-      <window_info anchor="right" id="Database" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_practice.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.1942029" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser" timestamp="1595574431345">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1595574431345" />
+    <state width="1396" height="231" key="GridCell.Tab.0.bottom" timestamp="1596334940995">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596334940995" />
+    <state width="1396" height="231" key="GridCell.Tab.0.center" timestamp="1596334940994">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1596334940994" />
+    <state width="1396" height="231" key="GridCell.Tab.0.left" timestamp="1596334940993">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1596334940993" />
+    <state width="1396" height="231" key="GridCell.Tab.0.right" timestamp="1596334940994">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1596334940994" />
+    <state x="258" y="123" key="Maven.ArtifactSearchDialog" timestamp="1595574385394">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="258" y="123" key="Maven.ArtifactSearchDialog/0.23.1440.877@0.23.1440.877" timestamp="1595574385394" />
+    <state x="-1625" y="116" key="SettingsEditor" timestamp="1595932201318">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1625" y="116" key="SettingsEditor/0.23.1440.877/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1595932201318" />
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1595574402269" />
+    <state x="-1320" y="214" key="new project wizard" timestamp="1595932220987">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1320" y="214" key="new project wizard/0.23.1440.877/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1595932220987" />
   </component>
 </project>
